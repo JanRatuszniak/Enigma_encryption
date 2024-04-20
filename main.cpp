@@ -7,9 +7,6 @@ using namespace std;
 bool flag1;
 bool flag2 = false;
 
-void manual;
-
-
 int main() {
     char letter;
     std::string line;
@@ -126,23 +123,23 @@ int main() {
 
 
 
-    char chuj;char chuj2;
-for(int i=0;i<4;i+=2) {
-    cout << "enter plugboard configuration" << endl;
-    cin >> chuj;
-    cin >> chuj2;
-    if (typeid(chuj) == typeid(char)&&typeid(chuj2) == typeid(char)) {
-        cout<<chuj<<"  "<<chuj2<<endl;
-    } else {
-        std::cout << "Incorrect data" << std::endl;
-        i=i-2;
-    }
-
-    plugboard->charTab[0+i] = chuj;
-    plugboard->charTab[1+i] = chuj2;
-    plugboard->checkConfiguration(i);
-
-}
+//    char chuj;char chuj2;
+//for(int i=0;i<4;i+=2) {
+//    cout << "enter plugboard configuration" << endl;
+//    cin >> chuj;
+//    cin >> chuj2;
+//    if (typeid(chuj) == typeid(char)) {
+//        cout<<chuj<<"  "<<chuj2<<endl;
+//    } else {
+//        std::cout << "Incorrect data" << std::endl;
+//        i=i-2;
+//    }
+//
+//    plugboard->charTab[0+i] = chuj;
+//    plugboard->charTab[1+i] = chuj2;
+//    plugboard->checkConfiguration(i);
+//
+//}
 
 
 ////////////////////////////////////////////////////////////////////////
