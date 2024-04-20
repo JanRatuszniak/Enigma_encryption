@@ -115,7 +115,7 @@ int main() {
     else if ( s.size() != 1 )
         cout << "Input was not a single character\n";
 
-    else if ( !isalpha(s[0], locale()) )
+    else if ( !isalpha(s[0]) )
         cout << "Input was not a letter\n";
 
     else
